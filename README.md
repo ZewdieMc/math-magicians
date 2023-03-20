@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>BiteBuddy</b></h3>
+  <h3><b>Math Magicians</b></h3>
 
 </div>
 
@@ -32,52 +32,27 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BiteBuddy <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
-BiteBuddy is a simple and powerful application that displays list of meal items on the dashboard where a customer can like, comment and order mill. It is built with webpack and the Fetch javascript API. [You can watch a brief demo here](https://drive.google.com/file/d/1fDh_22tOarmupqAs0D0jfot5KeRUP-E7/view?usp=sharing).
-
+Math Magicians is a Simple App that is used to perform simple math calculations. It is built with React and it is a Single Page Application (SPA). It is a project that is part of the Microverse curriculum.
 ## 🛠 Built With <a name="built-with"></a>
-webpack
+React
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Structure</summary>
-  <ul>
-    <li><a href="https://html.com/">HTML</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Style</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Linters</summary>
-  <ul>
-    <li><a href="https://webhint.io/">Webhint</a></li>
-    <li><a href="https://stylelint.io/">Stylelint</a></li>
-    <li><a href="https://eslint.org//">Eslint</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Fetch list of meal items from API
-- View list of list of different meal categories
-- Like, Comment and order meal
+- Initial set up: displays animating React logo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-Have a look at the [live demo ](https://zewdiemc.github.io/javascript-group-capstone/dist/) of the project.
+[Coming soon]()
+<!-- Have a look at the [live demo ](https://zewdiemc.github.io/javascript-group-capstone/dist/) of the project. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,29 +75,31 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
-  git clone git@github.com/ZewdieMc/javascript-group-capstone.git
+  git clone git@github.com/ZewdieMc/match-magicians.git
 ```
 ### Install
 
 Install this project with:
 ```sh
-  cd javascript-group-capstone/
+  cd math-magicians/
   npm install
 ```
 
 ### Usage
 
 To run the project:
- - `npm start`
+```sh
+  npm start
+``` 
 
 ### Run tests
 
 To run tests, run the following command:
+  
+  ```sh
+    npm test
+  ```
 
-To check for html errors run:
-```sh
-  npx hint .
-```
 To check for css errors run:
 ```sh
   npx stylelint "**/*.{css,scss}"
@@ -148,21 +125,13 @@ Deployed using Github Pages.
 - Twitter: [@HabtieZewdie](https://twitter.com/HabtieZewdie)
 - LinkedIn: [Zewdie Habtie](https://linkedin.com/in/zewdie-habtie-sisay-947153172)
 
-
-👤 Lorenzo
-
-- GitHub: [@lorenzoworx](https://github.com/lorenzoworx)
-- Twitter: [@lorenzoworx](https://twitter.com/lorenzoworx)
-- LinkedIn: [Lorenzo](https://linkedin.com/in/oshoke-okolo-665208108)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Improve the look and feel of the application.
+- Install React Router and Create components.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,7 +142,7 @@ Deployed using Github Pages.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ZewdieMc/javascript-group-capstone/issues).
+Feel free to check the [issues page](https://github.com/ZewdieMc/math-magicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +166,10 @@ We would like to thank Microverse for offering us this opportunity to learn, and
 
 ## ❓ FAQ <a name="faq"></a>
 
--Why use linters?
-
-  - The use of linters helps to diagnose and fix technical issues, also linters can help teams achieve a more readable and consistent style, through the enforcement of its rules.
+- Why React?
+  - React has broader community support, and it is a very popular library.
+  - React is flexible and can be used to build different types of applications.
+  - React is easy to learn and use.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
