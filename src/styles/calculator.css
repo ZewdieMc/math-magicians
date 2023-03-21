@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
   display: flex;
   justify-content: center;
   margin: 1rem;
+  gap: 1rem;
 }
 
 .calculator {
@@ -18,7 +21,7 @@
 }
 
 .calculator .result {
-  background: darkgray;
+  background: rgb(105, 102, 102);
   padding: 1rem;
   color: white;
   font-size: 2rem;
@@ -38,6 +41,8 @@ button {
   justify-content: center;
   height: 4rem;
   align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 button:hover {
