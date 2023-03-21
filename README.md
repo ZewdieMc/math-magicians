@@ -44,7 +44,7 @@ React
 
 ### Key Features <a name="key-features"></a>
 
-- Initial set up: displays animating React logo.
+- Shows the UI of the calculator using components.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
