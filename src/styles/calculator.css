@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: #f5f5f5;
+}
+
+.calculator .result {
+  background: rgb(105, 102, 102);
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.calculator .keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0;
+}
+
+button {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 0 0 2px 2px #ccc;
+  z-index: 3;
+  font-weight: bolder;
+}
+
+button.operator {
+  background-color: darkorange;
+}
+
+button#zero {
+  grid-column: 1/3;
+}
