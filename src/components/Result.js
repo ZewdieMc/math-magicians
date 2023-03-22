@@ -1,11 +1,20 @@
 import PropTypes from 'prop-types';
 
-const Result = ({ result }) => (
-  <div className="result">
-    <p>{ result }</p>
-  </div>
-);
+const Result = ({ state }) => {
+  const { total, next, operation } = state;
+  return (
+    <div className="result">
+      <p>
+        { total }
+        {operation}
+        {next}
+      </p>
+    </div>
+  );
+};
 
-Result.defaultProps = { result: '0' };
-Result.propTypes = { result: PropTypes.string };
+Result.propTypes = {
+  state: PropTypes.objectOf(PropTypes.string).isRequired,
+};
+
 export default Result;

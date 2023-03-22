@@ -44,7 +44,7 @@ React
 
 ### Key Features <a name="key-features"></a>
 
-- Shows the UI of the calculator using components.
+- Computes mathematical operations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
