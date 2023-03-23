@@ -82,3 +82,12 @@ button#zero {
   gap: 1rem;
   background-color: #f5f5f5;
 }
+
+.quoteContainer .quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 1rem;
+}
