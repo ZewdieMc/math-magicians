@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const Quote = () => {
   const baseURL = 'https://api.api-ninjas.com/v1/quotes';
@@ -7,8 +8,7 @@ const Quote = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${baseURL}?limit=3&category=success`, {
-      limit: 4,
+    fetch(`${baseURL}?limit=4&category=success`, {
       headers: {
         'X-Api-Key': 'XVTYDqKegKHVDqR0pHEeSQ==MnYjSlly2QbA1h0u',
       },
@@ -28,6 +28,7 @@ const Quote = () => {
       {
         quotes.map((quote) => (
           <div className="quoteContainer" key={quote.quote}>
+            <FormatQuoteIcon />
             <p className="quote">{quote.quote}</p>
             <small className="author">{quote.author}</small>
           </div>
