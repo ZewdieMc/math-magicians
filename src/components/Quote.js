@@ -5,8 +5,9 @@ const Quote = () => {
   const [quotes, setQuote] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    fetch(`${baseURL}?limit=4&category=success`, {
+    fetch(`${baseURL}?limit=3&category=success`, {
       limit: 4,
       headers: {
         'X-Api-Key': 'XVTYDqKegKHVDqR0pHEeSQ==MnYjSlly2QbA1h0u',
@@ -20,6 +21,7 @@ const Quote = () => {
       .then((data) => setQuote(data))
       .catch((err) => { setError(err); setLoading(false); });
   }, []);
+
   return (
     <div className="quotes">
       {error && <span className="error">Error while fetching data...</span>}
