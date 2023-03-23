@@ -95,7 +95,7 @@ button#zero {
 }
 
 .quoteContainer .author {
-  align-self: flex-end;
+  align-self: center;
   font-style: italic;
   color: blue;
 }
