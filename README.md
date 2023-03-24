@@ -36,7 +36,8 @@
 
 Math Magicians is a Simple App that is used to perform simple math calculations. It is built with React and it is a Single Page Application (SPA). It is a project that is part of the Microverse curriculum.
 ## 🛠 Built With <a name="built-with"></a>
-React
+- React
+- CSS
 ### Tech Stack <a name="tech-stack"></a>
 [React](react.dev)
 
