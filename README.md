@@ -38,13 +38,14 @@ Math Magicians is a Simple App that is used to perform simple math calculations.
 ## 🛠 Built With <a name="built-with"></a>
 React
 ### Tech Stack <a name="tech-stack"></a>
-
+[React](react.dev)
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 - Computes mathematical operations.
+- Displays random Quotes fetched from API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
