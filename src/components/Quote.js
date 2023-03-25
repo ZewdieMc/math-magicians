@@ -5,7 +5,6 @@ const Quote = () => {
   const baseURL = 'https://api.api-ninjas.com/v1/quotes';
   const [quotes, setQuote] = useState([]);
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(`${baseURL}?limit=4&category=success`, {
@@ -14,27 +13,27 @@ const Quote = () => {
       },
     })
       .then((result) => {
-        setLoading(false);
         setError('');
         return result.json();
       })
       .then((data) => setQuote(data))
-      .catch((err) => { setError(err); setLoading(false); });
+      .catch((err) => { setError(err); });
   }, []);
 
   return (
     <div className="quotes">
       {error && <span className="error">Error while fetching data...</span>}
       {
-        quotes.map((quote) => (
-          <div className="quoteContainer" key={quote.quote}>
-            <FormatQuoteIcon />
-            <p className="quote">{quote.quote}</p>
-            <small className="author">{quote.author}</small>
-          </div>
-        ))
+        quotes.length
+          ? quotes.map((quote) => (
+            <div className="quoteContainer" key={quote.quote}>
+              <FormatQuoteIcon />
+              <p className="quote">{quote.quote}</p>
+              <small className="author">{quote.author}</small>
+            </div>
+          ))
+          : <div>loading...</div>
         }
-      {loading && <div>Loading...</div>}
     </div>
   );
 };

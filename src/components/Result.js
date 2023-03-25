@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Result = ({ state }) => {
-  const { total, next, operation } = state;
+const Result = ({ result }) => {
+  const { total, next, operation } = result;
   return (
     <div className="result">
       <p>
@@ -14,7 +14,7 @@ const Result = ({ state }) => {
 };
 
 Result.propTypes = {
-  state: PropTypes.objectOf(PropTypes.string).isRequired,
+  result: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default Result;

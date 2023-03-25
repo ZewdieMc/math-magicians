@@ -10,11 +10,10 @@ const Calculator = () => {
 
   const handleButtonClicks = (buttonName) => {
     setState(calculate({ total, next, operation }, buttonName));
-    // !still confused about what object to pass
   };
   return (
     <div className="calculator">
-      <Result state={state} />
+      <Result result={state} />
       <Keypad onButtonClick={handleButtonClicks} />
     </div>
   );
