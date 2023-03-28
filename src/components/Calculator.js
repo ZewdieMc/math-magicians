@@ -12,10 +12,15 @@ const Calculator = () => {
     setState(calculate({ total, next, operation }, buttonName));
   };
   return (
-    <div className="calculator">
-      <Result result={state} />
-      <Keypad onButtonClick={handleButtonClicks} />
-    </div>
+    <>
+      <div className="math">
+        <h2>Let&apos;s Do some math</h2>
+        <div className="calculator">
+          <Result result={state} />
+          <Keypad onButtonClick={handleButtonClicks} />
+        </div>
+      </div>
+    </>
   );
 };
 
