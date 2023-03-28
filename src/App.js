@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <nav>
-        <h1>Math Magicians</h1>
+        <h3>Math Magicians</h3>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/calculator">Calculator</Link></li>
