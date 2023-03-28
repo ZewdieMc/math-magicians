@@ -14,7 +14,7 @@ const Calculator = () => {
   return (
     <>
       <div className="math">
-        <h1>Let&apos;s Do some math</h1>
+        <h2>Let&apos;s Do some math</h2>
         <div className="calculator">
           <Result result={state} />
           <Keypad onButtonClick={handleButtonClicks} />
