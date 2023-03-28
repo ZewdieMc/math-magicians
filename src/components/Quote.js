@@ -22,12 +22,16 @@ const Quote = () => {
 
   return (
     <div className="quotes">
-      {error && <span className="error">Error while fetching data...</span>}
+      {error && (
+      <span className="error">
+        Error while fetching data...
+      </span>
+      )}
       {
         quotes.length
           ? quotes.map((quote) => (
             <div className="quoteContainer" key={quote.quote}>
-              <FormatQuoteIcon />
+              <FormatQuoteIcon style={{ transform: 'rotate(180deg)' }} />
               <p className="quote">{quote.quote}</p>
               <small className="author">{quote.author}</small>
             </div>
