@@ -36,7 +36,7 @@ const Quote = () => {
               <small className="author">{quote.author}</small>
             </div>
           ))
-          : <div>loading...</div>
+          : <div>Loading...</div>
         }
     </div>
   );
