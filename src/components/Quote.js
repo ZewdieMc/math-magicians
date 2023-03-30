@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const Quote = () => {
   const baseURL = 'https://api.api-ninjas.com/v1/quotes';
@@ -31,7 +30,6 @@ const Quote = () => {
         quotes.length
           ? quotes.map((quote) => (
             <div className="quoteContainer" key={quote.quote}>
-              <FormatQuoteIcon style={{ transform: 'rotate(180deg)' }} />
               <p className="quote">{quote.quote}</p>
               <small className="author">{quote.author}</small>
             </div>
